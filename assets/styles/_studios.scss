@@ -1,0 +1,28 @@
+@import "../../assets/styles/vars.scss";
+
+.studios__container {
+    width: 100%;
+    font-family: sans-serif;
+    color: $main-color;
+
+    @include f-column;
+    justify-content: center;
+    margin: 0 auto;
+
+    .studios__heading {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+
+    .database__container {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        gap: 2%;
+        margin: 40px;
+
+        .database__input {}
+
+        .database__list {}
+    }
+}

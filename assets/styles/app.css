@@ -1215,4 +1215,24 @@ button[type=submit]:hover {
     background-color: rgba(9, 7, 7, 0.64);
     border-radius: 15px;
   }
+}
+.studios__container {
+  width: 100%;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.studios__container .studios__heading {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.studios__container .database__container {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  gap: 2%;
+  margin: 40px;
 }/*# sourceMappingURL=app.css.map */

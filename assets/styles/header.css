@@ -47,13 +47,13 @@
 }
 
 .header__list {
-  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
   position: relative;
   z-index: 2;
+  margin-top: 10px;
 }
 .header__list li {
   list-style: none;
@@ -63,10 +63,6 @@
 .header__link {
   color: white;
   text-decoration: none;
-}
-.header__link:hover {
-  color: #594444;
-  transition: 300ms;
 }
 
 .header__burger {
