@@ -1,8 +1,8 @@
-# JS-team-project
+# Web Project 2.0
 
-- First JS team project
+- Web Project 2.0
 
-`GitHub Pages link:` https://otter00.github.io/js-team-project/
+`GitHub Pages link:`
 
 ## Subject:
 
@@ -16,3 +16,4 @@
 - JS Slider
 - Payment modal window
 - Browserify modules: moment (for datetime)
+- Local database
