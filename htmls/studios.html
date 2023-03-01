@@ -85,8 +85,45 @@
             <h1 class="studios__heading">animation studios db</h1>
 
             <section class="database__container">
-                <div class="database__input">input there</div>
-                <div class="database__list">db there</div>
+
+                <div class="database__input">
+                    <p id="hh"></p>
+                    <form id="frm1" onsubmit="return false;">
+                        <table>
+                            <tr>
+                                <td>Raiting:</td>
+                                <td><input type="text" id="tbID" /></td>
+                            </tr>
+                            <tr>
+                                <td>Studio Name:</td>
+                                <td><input type="text" id="tbName" /></td>
+                            </tr>
+                            <tr>
+                                <td>Country:</td>
+                                <td><input type="text" id="tbLocation" /></td>
+                            </tr>
+                            <tr>
+                                <td><button id="btnInsert" onclick="Insert()">Insert</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="database__list">
+                    <table id="tblGrid" cellpadding="10px" cellspacing="0">
+                        <tr style="background-color:black;color:white;font-size:18px;">
+                            <td>
+                                Raiting
+                            </td>
+                            <td>
+                                Studio name
+                            </td>
+                            <td>
+                                Country
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </section>
         </div>
     </div>

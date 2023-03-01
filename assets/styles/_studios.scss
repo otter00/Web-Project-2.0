@@ -23,6 +23,10 @@
 
         .database__input {}
 
-        .database__list {}
+        .database__list {
+            #tblGrid {
+                border: 1px solid $main-color;
+            }
+        }
     }
 }
