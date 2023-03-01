@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/styles/payment.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles/header.css" />
+  <link rel="stylesheet" href="../assets/styles/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="payment">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__body">
+          <a href="#" class="header__logo">
+            <img class="logo" src="../assets/images/header/logo.svg" alt="" /></a>
+          <div class="header__burger"><span class="header__burger_Span"></span></div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li><a class="header__link" href="../htmls/main.html">CATEGORIES</a></li>
+              <li><a class="header__link" href="#">COUNTRIES</a></li>
+              <li><a class="header__link" href="../htmls/main.html">TV SERIES</a></li>
+              <li><a class="header__link" href="../htmls/main.html">MOVIES</a></li>
+              <li><a class="header__link" href="../index.html">LOGIN</a></li>
+              <li><a class="header__link" href="signup.html">SIGN UP</a></li>
+              <div class="search-container">
+                <form action="/search">
+                  <input type="text" placeholder="Search...">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="payment__wrapper">
+      <div class="payment__step">
+        <div class="payment__steps step-one">
+          <div class="payment__number">1</div>
+          <div class="payment__text payment__text_one payment__text_chosen">
+            choose a package
+          </div>
+          <div class="payment__line"></div>
+        </div>
+        <div class="payment__steps step-two">
+          <div class="payment__number">2</div>
+          <div class="payment__text payment__text_two">
+            choose a Mode of payment
+          </div>
+          <div class="payment__line"></div>
+        </div>
+        <div class="payment__steps">
+          <div class="payment__number">3</div>
+          <div class="payment__text">enjoy movibe 100%</div>
+        </div>
+      </div>
+      <div class="payment__step-error"></div>
+      <div class="payment__first-step">
+        <div class="payment__unlimited unlimited">
+          <div class="unlimited__title">Advanced premium</div>
+          <div class="unlimited__main-block">
+            <figure class="unlimited__picture">
+              <img class="unlimited__picture-one" src="../assets/images/payment/payment-pop-corn.png" alt="picture" />
+              <figcaption class="unlimited__pic-text">
+                unlimited access
+              </figcaption>
+            </figure>
+            <div class="unlimited__text">
+              Watch movies unlimits. You can access all contents, movies
+              currently available on Movibe. No need to watch ads, no
+              interruptions.
+            </div>
+          </div>
+        </div>
+        <div class="payment__packages">
+          <div class="unlimited__title">packages</div>
+          <div class="payment__tariff">
+            <div class="payment__tariff-block block-one">
+              <p>premium 1 day</p>
+              <div class="payment__on-click">0.49$/day</div>
+            </div>
+            <div class="payment__tariff-block block-two">
+              <p>premium 1 week</p>
+              <div class="payment__on-click2">1.99$/week</div>
+            </div>
+            <div class="payment__tariff-block block-three">
+              <p>premium 1 month</p>
+              <div class="payment__on-click3">5.99$/month</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="payment__second-step second-page">
+        <div class="second-page__wrapper">
+          <div class="second-page__logo">
+            <figure class="second-page__picture">
+              <img class="unlimited__picture-one" src="../assets/images/payment/logo.png" alt="logo" />
+              <figcaption class="second-page__pic-text">
+                from Vismoff
+              </figcaption>
+            </figure>
+          </div>
+          <div class="second-page__main main-block">
+            <div class="main-block__title">Detail:</div>
+            <div class="main-block__premium-acc">Movie Premium Account</div>
+            <div class="main-block__block">
+              <div class="main-block__package-name">Package name:</div>
+              <div class="main-block__package-name-js"></div>
+            </div>
+            <div class="main-block__block">
+              <div class="main-block__valid-date">Valid date:</div>
+              <div class="main-block__valid-date-js"></div>
+            </div>
+            <div class="main-block__block">
+              <div class="main-block__exp-date">Expiration date:</div>
+              <div class="main-block__exp-date-js"></div>
+            </div>
+            <div class="main-block__block block-total">
+              <div class="main-block__total">Total:</div>
+              <div class="main-block__total-js"></div>
+            </div>
+            <div class="main-block__cards">
+              <div class="main-block__card">
+                <input type="radio" name="bank-card" id="momo" />
+                <label class="main-block__label" for="momo">
+                  <img src="../assets/images/payment/momo.png" alt="momo" />
+                </label>
+              </div>
+              <div class="main-block__card">
+                <input type="radio" name="bank-card" id="paypals" />
+                <label class="main-block__label" for="paypals">
+                  <img src="../assets/images/payment/paypal.png" alt="paypal" />
+                </label>
+              </div>
+              <div class="main-block__card">
+                <input type="radio" name="bank-card" id="visa" checked />
+                <label class="main-block__label" for="visa">
+                  <img src="../assets/images/payment/visa.png" alt="visa" />
+                </label>
+              </div>
+              <div class="main-block__card">
+                <input type="radio" name="bank-card" id="zalopay" />
+                <label class="main-block__label" for="zalopay">
+                  <img src="../assets/images/payment/zalopay.png" alt="zalopay" />
+                </label>
+              </div>
+            </div>
+            <div class="main-block__button">
+              <button type="button" class="btn main-block__submit" data-bs-toggle="modal" data-bs-target="#modal">
+                Открыть
+              </button>
+            </div>
+            <div class="modal fade" id="modal" tabindex="-1">
+              <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content modal__wrapper">
+                  <div class="text-right">
+                    <i class="fa fa-close close" data-dismiss="modal"></i>
+                  </div>
+                  <div class="tabs mt-3">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="visa-tab" data-toggle="tab" href="#visa" role="tab" aria-controls="visa"
+                          aria-selected="false">
+                          <img src="http://banki31.ru/content/15198/__p.120x80x100.Visa_Mastercard_Logo.jpg" width="80"
+                            alt="visa" />
+                        </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="paypal-tab" data-toggle="tab" href="#paypal" role="tab"
+                          aria-controls="paypal" aria-selected="false">
+                          <img src="https://free-qr.com/images/watermarks/11-paypal.png" width="80" alt="paypal" />
+                        </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="momo-tab" data-toggle="tab" href="#momo" role="tab" aria-controls="momo"
+                          aria-selected="false">
+                          <img src="../assets/images/payment/momo.png" width="80" alt="momo" />
+                        </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="zalopay-tab" data-toggle="tab" href="#zalopay" role="tab"
+                          aria-controls="zalopay" aria-selected="false">
+                          <img src="../assets/images/payment/zalopay.png" width="80" alt="zalopay" />
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="visa2" role="tabpanel" aria-labelledby="visa-tab">
+                        <div class="mt-4 mx-4">
+                          <form name="form" method="post" onsubmit="return false">
+                            <div class="text">
+                              <div class="card__block">
+                                <div class="card__package-name">
+                                  Package name:
+                                </div>
+                                <div class="card__package-name-js"></div>
+                              </div>
+                              <div class="card__block">
+                                <div class="card__total">Total:</div>
+                                <div class="card__total-js"></div>
+                              </div>
+                            </div>
+                            <div class="form mt-3">
+                              <div class="inputbox">
+                                <input type="text" name="name" class="form-control" id="input__border"
+                                  required="required" placeholder="JOHN WICK" />
+                                <span>Cardholder Name</span>
+                              </div>
+                              <div class="inputbox">
+                                <input type="text" name="name" min="1" max="999" class="form-control"
+                                  required="required" id="input__border2" placeholder="4000000000000000" />
+                                <span>Card Number</span>
+                                <i class="fa fa-eye"></i>
+                              </div>
+                              <div class="d-flex flex-row justify-content-between gap-3">
+                                <div class="inputbox">
+                                  <input type="text" name="name" min="1" max="999" class="form-control"
+                                    required="required" id="input__border3" placeholder="00/0000" />
+                                  <span>Expiration Date</span>
+                                </div>
+                                <div class="inputbox">
+                                  <input type="text" name="name" min="1" max="999" class="form-control"
+                                    required="required" id="input__border4" placeholder="***" />
+                                  <span>CVV</span>
+                                </div>
+                              </div>
+                              <div class="payment-errors"></div>
+                              <div class="px-5 pay">
+                                <button class="btn btn-success btn-block bank__button-confirm">
+                                  Confirm
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  <script src="../js/bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="../js/header.js"></script>
+</body>
+
+</html>

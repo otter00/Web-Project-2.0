@@ -1,0 +1,238 @@
+@import "../../assets/styles/vars.scss";
+
+* {
+    @include reset;
+}
+
+.header__container {
+    color: $main-color;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.301);
+        z-index: 2;
+    }
+}
+
+.header__body {
+    position: relative;
+    @include flex-space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header__logo {
+    flex: 0 0 100px;
+    position: relative;
+    z-index: 3;
+
+    .logo {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+.header__list {
+    @include flex-space-between;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+    li {
+        list-style: none;
+        margin: 0px 0px 0px 20px;
+    }
+}
+
+.header__link {
+    color: $main-color;
+    text-decoration: none;
+}
+
+
+.header__burger {
+    display: none;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: $main-color;
+    font-weight: lighter;
+}
+
+button[type=submit] {
+    background-color: #4caf4f00;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #68acbf;
+}
+
+.fa {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+.header__menu {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media(max-width:1023px) {
+    body.lock {
+        overflow: hidden; //чтобы при включении бургера не скроллилась основная страница
+    }
+
+    .header__body {
+        height: 50px;
+    }
+
+    .header__logo {
+        flex: 0 0 60px;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+
+        &_Span {
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 9px;
+            transition: all 0.3s ease 0s;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            background-color: white;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: all 0.3s ease 0s;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header__burger.active span {
+        transform: scale(0);
+    }
+
+
+    .header__menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -100%;
+        background-color: #594444;
+        padding: 70px 10px 20px 10px;
+        overflow: auto;
+    }
+
+    .header__menu.active {
+        top: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header__list {
+        display: block;
+
+        li {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+
+
+
+    .search-box {
+        float: left;
+    }
+
+    .search-boxInput[type=text] {
+        padding: 5px;
+        margin-top: 7px;
+        border: none;
+        background-color: #00000000;
+        float: none;
+    }
+
+    .search-box button {
+        padding: 5px;
+        margin-top: 7px;
+        margin-right: 15px;
+        border: none;
+        cursor: pointer;
+        background-color: rgba(14, 14, 14, 0);
+
+        &:hover {
+            font-size: 25px;
+            background-color: rgba(9, 7, 7, 0.64);
+            border-radius: 15px;
+        }
+    }
+}

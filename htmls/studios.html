@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Gugi' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Inter&family=Merriweather&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../assets/styles/header.css" />
+    <link rel="stylesheet" href="../assets/styles/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Cinema Database</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__body">
+                <a href="#" class="header__logo">
+                    <img class="logo" src="../assets/images/header/logo.svg" alt="" /></a>
+                <div class="header__burger"><span class="header__burger_Span"></span></div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a class="header__link" href="#">CATEGORIES</a></li>
+                        <li><a class="header__link" href="#">COUNTRIES</a></li>
+                        <li><a class="header__link" href="#">TV SERIES</a></li>
+                        <li><a class="header__link" href="#">MOVIES</a></li>
+                        <li><a class="header__link" href="../index.html">LOGIN</a></li>
+                        <li><a class="header__link" href="signup.html">SIGN UP</a></li>
+                        <div class="search-container">
+                            <form action="/search">
+                                <input type="text" placeholder="Search...">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="slideshow">
+            <div class="slideshow__container">
+                <div class="slideshow__slides">
+                    <img src="../assets/images/studios/dreamworks.jpg" alt="" class="slideshow__img">
+                    <p class="slideshow__text">DreamWorks</p>
+                </div>
+                <div class="slideshow__slides">
+                    <img src="../assets/images/studios/disney.jpg" alt="" class="slideshow__img">
+                    <p class="slideshow__text">Walt Disney Pictures</p>
+                </div>
+                <div class="slideshow__slides">
+                    <img src="../assets/images/studios/studioghibli.jpg" alt="" class="slideshow__img">
+                    <p class="slideshow__text">Studio Ghibli</p>
+                </div>
+                <div class="slideshow__slides">
+                    <img src="../assets/images/studios/pixar.jpg" alt="" class="slideshow__img">
+                    <p class="slideshow__text">Pixar</p>
+                </div>
+                <a class="arrow prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="arrow next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="slideshow__dots">
+                <span class="slideshow__dot" onclick="currentSlide(1)"></span>
+                <span class="slideshow__dot" onclick="currentSlide(2)"></span>
+                <span class="slideshow__dot" onclick="currentSlide(3)"></span>
+                <span class="slideshow__dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/movie.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+
+</html>
