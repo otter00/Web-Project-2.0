@@ -47,6 +47,7 @@
 }
 
 .header__list {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -62,6 +63,10 @@
 .header__link {
   color: white;
   text-decoration: none;
+}
+.header__link:hover {
+  color: #594444;
+  transition: 300ms;
 }
 
 .header__burger {
