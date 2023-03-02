@@ -84,34 +84,37 @@
         <div class="studios__container">
             <h1 class="studios__heading">animation studios db</h1>
 
+            <hr>
+
             <section class="database__container">
 
                 <div class="database__input">
                     <p id="hh"></p>
-                    <form id="frm1" onsubmit="return false;">
-                        <table>
+                    <form id="frm1">
+                        <table class="db-table">
                             <tr>
-                                <td>Raiting:</td>
-                                <td><input type="text" id="tbID" /></td>
+                                <td>Raiting: </td>
+                                <td><input class="db__input-field" type="text" id="tbID" /></td>
                             </tr>
                             <tr>
-                                <td>Studio Name:</td>
-                                <td><input type="text" id="tbName" /></td>
+                                <td>Studio Name: </td>
+                                <td><input class="db__input-field" type="text" id="tbName" /></td>
                             </tr>
                             <tr>
-                                <td>Country:</td>
-                                <td><input type="text" id="tbLocation" /></td>
+                                <td>Country: </td>
+                                <td><input class="db__input-field" type="text" id="tbLocation" /></td>
                             </tr>
                             <tr>
                                 <td><button id="btnInsert" onclick="Insert()">Insert</button></td>
+                                <td><button id="btnDelete" onclick="Delete()">Delete</button></td>
                             </tr>
                         </table>
                     </form>
                 </div>
 
                 <div class="database__list">
-                    <table id="tblGrid" cellpadding="10px" cellspacing="0">
-                        <tr style="background-color:black;color:white;font-size:18px;">
+                    <table id="tblGrid" cellspacing="10px">
+                        <tr>
                             <td>
                                 Raiting
                             </td>
@@ -128,10 +131,10 @@
         </div>
     </div>
 
+    <script src="../js/studiosDB.js"></script>
     <script src="../js/movie.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="../js/header.js"></script>
-    <script src="../js/studiosDB.js"></script>
 </body>
 
 </html>

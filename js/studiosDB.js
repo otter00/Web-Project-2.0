@@ -15,6 +15,14 @@ function Insert() {
         tx.executeSql('insert into Studios_Table(id, Name, Country) values(' + id + ',"' + name + '","' + location + '")');    
     });    
 }    
+
+function Delete() {
+    var id = document.getElementById("tbID").value; 
+    dbObj.transaction(function(t) {
+        t.executeSql(`DELETE FROM Studios_Table WHERE id =` + id);
+    });
+}
+
 dbObj.transaction(function (tx) {    
     tx.executeSql('SELECT * FROM Studios_Table', [], function (tx, results) {    
         var len = results.rows.length, i;    

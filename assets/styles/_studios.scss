@@ -2,7 +2,7 @@
 
 .studios__container {
     width: 100%;
-    font-family: sans-serif;
+    font-family: 'Gugi', sans-serif;
     color: $main-color;
 
     @include f-column;
@@ -13,6 +13,14 @@
         display: flex;
         justify-content: center;
         text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    hr {
+        margin: 17px 40px 0 40px;
+        height: 6px;
+        background: linear-gradient(55deg, #475F66, #ddd, #3a2d2d);
+        border: none;
     }
 
     .database__container {
@@ -21,12 +29,54 @@
         gap: 2%;
         margin: 40px;
 
-        .database__input {}
+        .database__input {
+            .db-table {
+                input:hover {
+                    background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+                }
+
+                #btnInsert, #btnDelete {
+                    width: 5em;
+                    height: 2em;
+                    color: $main-color;
+                    border-radius: 10px;
+                    letter-spacing: 2px;
+                    background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+
+                    &:hover {
+                        cursor: pointer;
+                        background: linear-gradient(114.23deg, #1a1515 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
+                    }
+                }
+            }
+        }
 
         .database__list {
             #tblGrid {
+                display: block;
                 border: 1px solid $main-color;
+                background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+
+                tbody {
+                    display: block;
+                    margin: 10px 5px 10px 25px;
+                }
+
+                tr {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
             }
         }
+    }
+}
+
+table {
+
+    tr,
+    td {
+        color: white;
+        font-size: 21px;
+        font-weight: 100;
     }
 }

@@ -1219,7 +1219,7 @@ button[type=submit]:hover {
 }
 .studios__container {
   width: 100%;
-  font-family: sans-serif;
+  font-family: "Gugi", sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
@@ -1230,6 +1230,13 @@ button[type=submit]:hover {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  font-weight: 100;
+}
+.studios__container hr {
+  margin: 17px 40px 0 40px;
+  height: 6px;
+  background: linear-gradient(55deg, #475F66, #ddd, #3a2d2d);
+  border: none;
 }
 .studios__container .database__container {
   display: grid;
@@ -1237,6 +1244,38 @@ button[type=submit]:hover {
   gap: 2%;
   margin: 40px;
 }
+.studios__container .database__container .database__input .db-table input:hover {
+  background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+}
+.studios__container .database__container .database__input .db-table #btnInsert, .studios__container .database__container .database__input .db-table #btnDelete {
+  width: 5em;
+  height: 2em;
+  color: white;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+}
+.studios__container .database__container .database__input .db-table #btnInsert:hover, .studios__container .database__container .database__input .db-table #btnDelete:hover {
+  cursor: pointer;
+  background: linear-gradient(114.23deg, #1a1515 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
+}
 .studios__container .database__container .database__list #tblGrid {
+  display: block;
   border: 1px solid white;
+  background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+}
+.studios__container .database__container .database__list #tblGrid tbody {
+  display: block;
+  margin: 10px 5px 10px 25px;
+}
+.studios__container .database__container .database__list #tblGrid tr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+table tr,
+table td {
+  color: white;
+  font-size: 21px;
+  font-weight: 100;
 }/*# sourceMappingURL=app.css.map */
