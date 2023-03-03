@@ -1,6 +1,7 @@
 @import "../../assets/styles/vars.scss";
 
-.studios__container {
+.studios__container,
+.studios-search__container {
     width: 100%;
     font-family: 'Gugi', sans-serif;
     color: $main-color;
@@ -9,7 +10,8 @@
     justify-content: center;
     margin: 0 auto;
 
-    .studios__heading {
+    .studios__heading,
+    .studios-search__heading {
         display: flex;
         justify-content: center;
         text-transform: uppercase;
@@ -25,17 +27,22 @@
 
     .database__container {
         display: grid;
-        grid-template-columns: 30% 60%;
-        gap: 2%;
+        grid-template-columns: 37% 60%;
+        gap: 3%;
         margin: 40px;
 
         .database__input {
             .db-table {
+                td {
+                    padding-right: 10px;
+                }
+
                 input:hover {
                     background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
                 }
 
-                #btnInsert, #btnDelete {
+                #btnInsert,
+                #btnDelete {
                     width: 5em;
                     height: 2em;
                     color: $main-color;

@@ -1,8 +1,10 @@
 @import "../../assets/styles/vars.scss";
-body{
+
+body {
     background: linear-gradient(114.23deg, #594444 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
 }
-.slideshow__container{
+
+.slideshow__container {
     @include f-column;
     justify-content: center;
     max-width: 100%;
@@ -16,20 +18,24 @@ body{
     line-height: 52px;
     color: $main-color;
 }
-.slideshow__img{
+
+.slideshow__img {
     width: 100%;
 }
-.slideshow__text{
+
+.slideshow__text {
     position: absolute;
     padding: 8px 12px;
     margin-top: -80px;
     left: 5%;
 }
-.slideshow__dots{
-    text-align:center;
+
+.slideshow__dots {
+    text-align: center;
     margin-top: 80px;
     margin-bottom: 30px;
 }
+
 .slideshow__dot {
     cursor: pointer;
     top: 848px;
@@ -39,12 +45,14 @@ body{
     background-color: #7D7373;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;        
-}    
-.active2, 
+    transition: background-color 0.6s ease;
+}
+
+.active2,
 .slideshow__dot:hover {
     background-color: #98cada;
 }
+
 .arrow {
     cursor: pointer;
     position: absolute;
@@ -55,19 +63,25 @@ body{
     font-size: 2.5em;
     transition: 0.6s ease;
 }
+
 .next {
     right: -1%;
 }
-.prev{
+
+.prev {
     left: -1%;
 }
-.movies{
+
+.movies {
     width: 100%;
     margin: 0 auto;
     font-family: 'Gugi', sans-serif;
     color: $main-color;
 
-    &__anime, &__popular, &__fantastika, &__drama{
+    &__anime,
+    &__popular,
+    &__fantastika,
+    &__drama {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
         margin: 30px;
@@ -77,10 +91,11 @@ body{
         text-align: center;
     }
 }
-.movie{
+
+.movie {
     width: 100%;
 
-    &__title{
+    &__title {
         text-align: center;
         font-size: 1.5em;
         line-height: 52px;
@@ -88,51 +103,60 @@ body{
         background-color: rgba(9, 7, 7, 0.64);
         border-radius: 15px;
     }
-    &__img{
+
+    &__img {
         height: 300px;
         position: relative;
         border-radius: 25px;
         cursor: pointer;
     }
-    &__img:hover{
+
+    &__img:hover {
         transform: translateY(-10px);
         box-shadow: 8px 10px 5px 2px #b2c0c0;
     }
-    &__year, &__rating{
+
+    &__year,
+    &__rating {
         font-size: 1em;
         line-height: 26px;
         margin: 0;
     }
-    &__link{
+
+    &__link {
         text-decoration: none;
         border-radius: 5px;
         padding: 10px 15px;
-        background-color: 
-        rgba(156, 201, 215, 0.67);
+        background-color:
+            rgba(156, 201, 215, 0.67);
         color: #594444;
     }
-    &__link:hover{
+
+    &__link:hover {
         background-color: #3a3a3a;
     }
-    &__description{
+
+    &__description {
         margin: 20px 50px;
     }
 }
-.movie2{
+
+.movie2 {
     display: none;
     width: 100%;
     height: 100%;
-    position: fixed; 
+    position: fixed;
     z-index: 110;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.movie2 div{
-    font-family: 'Comfortaa'; 
+
+.movie2 div {
+    font-family: 'Comfortaa';
     font-size: 1.1em;
     font-style: normal;
-    overflow:auto;
+    overflow: auto;
     background-color: #475F66;
     border-radius: 30px;
     width: 60%;
@@ -142,27 +166,32 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.movie2 .movie__name{
+
+.movie2 .movie__name {
     margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
-    .slideshow__container{
+    .slideshow__container {
         top: 50px;
         margin-left: 0px;
         margin-right: 0px;
     }
-    .slideshow__dots{
+
+    .slideshow__dots {
         margin-top: 0;
     }
-    .movie2{
+
+    .movie2 {
         font-size: 1.2em;
     }
-    .movie2 div{
+
+    .movie2 div {
         width: 80%;
         height: 90%;
     }
-    .movie__description{
+
+    .movie__description {
         margin: 20px 10px;
     }
 }

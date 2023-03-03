@@ -1217,7 +1217,8 @@ button[type=submit]:hover {
     border-radius: 15px;
   }
 }
-.studios__container {
+.studios__container,
+.studios-search__container {
   width: 100%;
   font-family: "Gugi", sans-serif;
   color: white;
@@ -1226,28 +1227,41 @@ button[type=submit]:hover {
   justify-content: center;
   margin: 0 auto;
 }
-.studios__container .studios__heading {
+.studios__container .studios__heading,
+.studios__container .studios-search__heading,
+.studios-search__container .studios__heading,
+.studios-search__container .studios-search__heading {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
   font-weight: 100;
 }
-.studios__container hr {
+.studios__container hr,
+.studios-search__container hr {
   margin: 17px 40px 0 40px;
   height: 6px;
   background: linear-gradient(55deg, #475F66, #ddd, #3a2d2d);
   border: none;
 }
-.studios__container .database__container {
+.studios__container .database__container,
+.studios-search__container .database__container {
   display: grid;
-  grid-template-columns: 30% 60%;
-  gap: 2%;
+  grid-template-columns: 37% 60%;
+  gap: 3%;
   margin: 40px;
 }
-.studios__container .database__container .database__input .db-table input:hover {
+.studios__container .database__container .database__input .db-table td,
+.studios-search__container .database__container .database__input .db-table td {
+  padding-right: 10px;
+}
+.studios__container .database__container .database__input .db-table input:hover,
+.studios-search__container .database__container .database__input .db-table input:hover {
   background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
 }
-.studios__container .database__container .database__input .db-table #btnInsert, .studios__container .database__container .database__input .db-table #btnDelete {
+.studios__container .database__container .database__input .db-table #btnInsert,
+.studios__container .database__container .database__input .db-table #btnDelete,
+.studios-search__container .database__container .database__input .db-table #btnInsert,
+.studios-search__container .database__container .database__input .db-table #btnDelete {
   width: 5em;
   height: 2em;
   color: white;
@@ -1255,20 +1269,26 @@ button[type=submit]:hover {
   letter-spacing: 2px;
   background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
 }
-.studios__container .database__container .database__input .db-table #btnInsert:hover, .studios__container .database__container .database__input .db-table #btnDelete:hover {
+.studios__container .database__container .database__input .db-table #btnInsert:hover,
+.studios__container .database__container .database__input .db-table #btnDelete:hover,
+.studios-search__container .database__container .database__input .db-table #btnInsert:hover,
+.studios-search__container .database__container .database__input .db-table #btnDelete:hover {
   cursor: pointer;
   background: linear-gradient(114.23deg, #1a1515 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
 }
-.studios__container .database__container .database__list #tblGrid {
+.studios__container .database__container .database__list #tblGrid,
+.studios-search__container .database__container .database__list #tblGrid {
   display: block;
   border: 1px solid white;
   background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
 }
-.studios__container .database__container .database__list #tblGrid tbody {
+.studios__container .database__container .database__list #tblGrid tbody,
+.studios-search__container .database__container .database__list #tblGrid tbody {
   display: block;
   margin: 10px 5px 10px 25px;
 }
-.studios__container .database__container .database__list #tblGrid tr {
+.studios__container .database__container .database__list #tblGrid tr,
+.studios-search__container .database__container .database__list #tblGrid tr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
