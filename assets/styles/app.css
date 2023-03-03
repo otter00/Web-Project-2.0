@@ -1293,6 +1293,17 @@ button[type=submit]:hover {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.search__container {
+  margin: 40px;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+}
+
+.pics__container img {
+  width: 80%;
+}
+
 table tr,
 table td {
   color: white;

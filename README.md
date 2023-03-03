@@ -2,7 +2,7 @@
 
 - Web Project 2.0
 
-`GitHub Pages link:`
+`GitHub Pages link:` https://otter00.github.io/Web-Project-2.0/
 
 ## Subject:
 

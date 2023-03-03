@@ -39,9 +39,9 @@
                         <li><a class="header__link" href="../index.html">LOGIN</a></li>
                         <li><a class="header__link" href="signup.html">SIGN UP</a></li>
                         <div class="search-container">
-                            <form action="/search">
-                                <input type="text" placeholder="Search...">
-                                <button type="submit"><i class="fa fa-search"></i></button>
+                            <form method="get" onsubmit="return false">
+                                <input class="JS__search-input" type="text" placeholder="Search...">
+                                <button class="JS__search" type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                     </ul>
@@ -111,8 +111,8 @@
                                 <td><input class="db__input-field" type="text" id="tbLocation" /></td>
                             </tr>
                             <tr>
-                                <td><button id="btnInsert" onclick="Insert()">Insert</button></td>
-                                <td><button id="btnDelete" onclick="Delete()">Delete</button></td>
+                                <td><button id="btnInsert">Insert</button></td>
+                                <td><button id="btnDelete">Delete</button></td>
                             </tr>
                         </table>
                     </form>
