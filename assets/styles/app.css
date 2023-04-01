@@ -1309,4 +1309,10 @@ table td {
   color: white;
   font-size: 21px;
   font-weight: 100;
+}
+
+.footer__studios {
+  padding: 28px 10px 0px 10px;
+  min-height: 80px;
+  background-color: #1a1515;
 }/*# sourceMappingURL=app.css.map */
